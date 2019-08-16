@@ -1,0 +1,39 @@
+@media only screen and (max-width: 959px) {
+    .s1-car{
+        flex-direction: column;
+       padding: 10px;
+    }
+    .s2-car{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .container{
+        width:95%;
+    }
+    .cont0{
+        flex-direction: column;
+    }
+    .cont0 div{
+        width: 100%;
+       margin-bottom: 15px;
+    }
+    .in{
+        flex-direction: column;
+    }
+    .inscr{
+        width: 90%;
+        padding: none;
+    }
+    .h{
+        display: block;
+    }
+    .inp{
+        width: 100%;
+    }
+    .loo{
+        display: block;
+    }
+    .h1{
+        display: none;
+    }
+}
