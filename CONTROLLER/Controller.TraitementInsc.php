@@ -1,6 +1,6 @@
 <?php
 require_once('../MODEL/User.php');
-$US=new User("","","","","","","","","","","","");
+$US=new User("","","",0,"","","","","","","","");
     if(isset($_POST['sub'])){
         $message="";
         $nom=htmlspecialchars($_POST['nom']);
@@ -28,6 +28,9 @@ $US=new User("","","","","","","","","","","","");
         }else if(strlen($pseudo)>10){
             $message="Pseudo ne doit pas depasser 10 caractere";
             header("Location:../VIEW/inscription.php?Message=$message");
+        }else if(strlen($telephone)>8){
+            $message="Numero Incorrecte elle doit avoir 8 chiffre";
+            header("Location:../VIEW/inscription.php?Message=$message");
         }else if($US->checkMail($email)>0){
             $message="Ce Mail Existe Deja";
             header("Location:../VIEW/inscription.php?Message=$message");
@@ -52,7 +55,7 @@ $US=new User("","","","","","","","","","","","");
 
             $reponse=$US->Inscription();
             if($reponse){
-                header('Location:../VIEW/connecter.html');
+                header('Location:../VIEW/connecter.php');
             }
         }
 

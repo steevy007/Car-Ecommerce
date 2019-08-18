@@ -26,6 +26,9 @@
     font-family: 'Roboto-Thin';
     src: url('../FONT/Roboto-Thin.ttf');
 }
+html{
+    height: 100%;
+}
 p{
     font-family: "CaviarDreams";
 }
@@ -112,9 +115,11 @@ body{
     float: right;
     background-color: rgba(245, 245, 245, 0.815);
     box-shadow: 0 3px 6px rgba(0, 0,0, 0.16), 0 6px 10px rgba(0, 0,0, 0.23);
+    margin-bottom: 20px;
 }
 .inc{
-    padding-top: 80px;
+    padding: 80px 0px;
+  
 }
 .in{
     display: flex;
@@ -167,72 +172,6 @@ body{
     color: black;
     box-shadow: 0 3px 6px rgba(0, 0,0, 0.16), 0 6px 10px rgba(0, 0,0, 0.23);
 }
-.content{
-
-    }
-    .box1{
-       position: absolute;
-       top: 50%;
-       left: 50%;
-       transform: translate(-50%, -50%);
-       width: 500px;
-       min-height: 50px;
-       background-color: rgba(10, 10, 10, 0.822);
-       padding:30px;
-     
-      line-height: 2;
-      box-shadow: 0 3px 6px rgba(0, 0,0, 0.16), 0 6px 10px rgba(0, 0,0, 0.23);
-    }
-    .f-inp label{
-        font-family: 'Elementary_Gothic_Bookhand';
-        font-size: 12px;
-        color:gray;
-    }
-    .f-inp input{
-        width:100%;
-        padding: 10px 10px;
-        box-sizing: border-box;
-        font-size: 16px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        font-family: 'JaymontLii_PERSONAL_USE';
-        border:none;
-        border-radius: 10px;
-        background-color:rgb(255, 255, 255);
-    }
-    .btn{
-        text-align: left;
-        
-    }
-    .btn button{
-        cursor: pointer;
-        font-size: 15px;
-        padding: 10px 30px;
-        border: none;
-        font-family: 'JaymontLii_PERSONAL_USE';
-        font-size:18px;
-        border-radius: 10px;
-    }
-    .btn button:hover{
-        background-color: whitesmoke;
-        box-shadow: 0 3px 6px rgba(0, 0,0, 0.16), 0 6px 10px rgba(0, 0,0, 0.23);
-    }    
-   center a{
-       color: whitesmoke;
-       margin-right: 10px;
-       text-decoration: none;
-   }
-   center a:hover{
-       text-decoration: underline;
-   }
-   .hom{
-    text-align: right;
-}
-.hom a img{
-    background-color: whitesmoke;
-    padding: 5px;
-    border-radius: 25px;
-}
 
 .s1-car{
     display: flex;
@@ -268,16 +207,19 @@ body{
 }
 .error{
     width: 100%;
-    padding: 30px 0px;
+    padding: 15px 0px;
     border-radius: 10px;
-    background-color: rgba(241, 3, 3, 0.568);
+    background-color:whitesmoke;
+    box-shadow: 0 3px 6px rgba(0, 0,0, 0.10), 0 6px 10px rgba(0, 0,0, 0.12);
     font-family: 'AppleGaramond-Italic';
     font-size:20px;
-    color: whitesmoke;
+    color: #cf1414;
 }
 .pied{
     width: 100%;
-  background-image: url('../IMAGES/Sans\ titre-16.jpg');
+   /*background-image: linear-gradient(#ece9e6,#ffffff);*/
+   background-image: linear-gradient(#232526,#414345);
+  /*background-image: linear-gradient(#757f9a,#d7dde8);*/
 }
 .credit{
     padding: 15px 0px;
@@ -310,16 +252,16 @@ h1,h2,h3,h4,h5,h6{
 }
 .c1 h5{
     margin-bottom: 10px;
-    color: rgb(240, 204, 106);
+    color: whitesmoke;
     font-family: 'JaymontLi_PERSONAL_USE';
     font-size: 20px;
-    text-shadow: 4px 4px 4px black;
+   
 }
 .c1 li a{
     font-family: 'CaviarDreams';
     font-style: italic;
-    color: rgb(240, 204, 106);
-    text-shadow: 6px 4px 4px black;
+    color:  whitesmoke;
+    
     text-transform: capitalize;
 }
 .c1 li a:hover{
@@ -332,7 +274,7 @@ h1,h2,h3,h4,h5,h6{
     background-color: rgba(245, 245, 245, 0.554);
     padding: 5px;
     border-radius: 30px;
-   border:1px solid gray;
+    box-shadow: 0 3px 6px rgba(0, 0,0, 0.24), 0 6px 10px rgba(0, 0,0, 0.23);
     margin-right: 5px;
  
 }
@@ -350,7 +292,7 @@ h1,h2,h3,h4,h5,h6{
     font-size:16px;
     padding: 0px 8px;
     height: 45px;
-    box-shadow: 0 3px 6px rgba(240, 204, 106, 0.13), 0 6px 10px rgba(240, 204, 106, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0,0, 0.24), 0 6px 10px rgba(0, 0,0, 0.23);
     margin-bottom: 20px;
 }
 .c1 form a{
@@ -358,7 +300,7 @@ h1,h2,h3,h4,h5,h6{
    padding: 12px 20px;
    background-color: whitesmoke;
    font-family: 'CaviarDreams';
-   box-shadow: 0 3px 6px rgba(240, 204, 106, 0.13), 0 6px 10px rgba(240, 204, 106, 0.23);
+   box-shadow: 0 3px 6px rgba(0, 0,0, 0.24), 0 6px 10px rgba(0, 0,0, 0.23);
    font-size:18px;
    float:right;
 }
@@ -366,9 +308,7 @@ h1,h2,h3,h4,h5,h6{
     background-color: white;
 
 }
-.h{
-    display: none;
-}
+
 .loo{
     width: 95%;
     margin: auto;
@@ -385,4 +325,136 @@ h1,h2,h3,h4,h5,h6{
 }
 .loo a:hover{
     background-color:  rgba(240, 204, 106, 0.23);
+}
+/*
+#page-table{
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+#page-td{
+    vertical-align: middle;
+}
+#global{
+    width: 500px;
+    margin: 20px auto;
+    text-align: left;
+    border:1px solid red;
+}*/
+.con{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.log{
+    width:70% ;
+    display: flex;
+    flex-direction: row;
+    min-height: 350px;
+    box-shadow: 0 3px 6px rgba(0, 0,0, 0.24), 0 6px 10px rgba(0, 0,0, 0.23);
+}
+.log div{
+    width: 50%;
+}
+.log div:first-child img{
+    width: 100%;
+    height: 100%;
+}
+.log div:last-child{
+    padding: 10px;
+    display: flex;
+justify-content: center;
+align-items: center;
+background-image: linear-gradient(#ece9e6,#ffffff);
+}
+.log div:last-child form{
+
+    width: 100%;
+    height: 100%;
+}
+.log div:last-child form label{
+    font-family: 'CaviarDreams';
+    width: 100%;
+  line-height: 2;
+  font-size: 20px;
+}
+.log div:last-child form .i{
+    width: 100%;
+    font-family: 'Roboto-Thin';
+    font-size: 18px;
+    text-align: center;
+    height: 35px;
+    border:none;
+    box-shadow: 0 3px 6px rgba(0, 0,0, 0.12), 0 6px 10px rgba(0, 0,0, 0.18);
+}
+.log div:last-child form .i1{
+float: right;
+font-family: 'CaviarDreams';
+padding: 15px 25px;
+cursor: pointer;
+font-size:15px;
+border:none;
+}
+.log div:last-child form .i1:hover{
+    box-shadow: 0 3px 6px rgba(0, 0,0, 0.12), 0 6px 10px rgba(0, 0,0, 0.18);
+    background-color: white;
+}
+.log div:last-child form .cent{
+    margin-bottom: 10px;
+}
+.cent1{
+    margin: 10px 0px;
+}
+.log div:last-child form p {
+    width: 100%;
+  
+}
+.log div:last-child form p img{
+    background-color: wheat;
+    padding: 10px ;
+    border-radius: 30px;
+     box-shadow: 0 3px 6px rgba(0, 0,0, 0.12), 0 6px 10px rgba(0, 0,0, 0.18);
+}
+.log div:last-child form p img:hover{
+    background-color: white;
+}
+.cent2{
+   width: 100%;
+   background-color: white;
+   box-shadow: 0 3px 6px rgba(0, 0,0, 0.12), 0 6px 10px rgba(0, 0,0, 0.18);
+   padding: 10px 0px;
+   margin: 5px 0px;
+   color:red;
+   border-top-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+.cent1 a{
+    font-family: 'CaviarDreams';
+    color: green;
+    margin-right:10px;
+}
+.cent1 a:hover{
+    text-decoration: underline;
+}
+.loa{
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+
+}
+.loa span{
+    margin-right: 5px;
+}
+.loa div:first-child{
+    float: right;
+}
+.loa div:last-child{
+    float: left;
+}
+.ef{
+    visibility: hidden;
 }

@@ -21,11 +21,8 @@
         flex-direction: column;
     }
     .inscr{
-        width: 90%;
+        width: 100%;
         padding: none;
-    }
-    .h{
-        display: block;
     }
     .inp{
         width: 100%;
@@ -34,6 +31,31 @@
         display: block;
     }
     .h1{
-        display: none;
+        visibility: hidden;
+    }
+    .inc{
+        padding: 150px 0px;
+      
+    }
+    .log{
+        flex-direction: column;
+        width: 100%;
+     
+    }
+    .log div{
+        width: 100%;
+    }
+    .con{
+        margin: 70px 0px;
+        padding: 25px 10px;
+    }
+    .ef{
+        visibility: visible;
+    }
+    .loa div:first-child{
+        float: left;
+    }
+    .loa div:last-child{
+        float: right;
     }
 }

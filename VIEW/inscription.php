@@ -1,4 +1,5 @@
 <?php
+session_start();
     $message="";
     if(isset($_GET['Message'])){
         $message=$_GET['Message'];
@@ -10,49 +11,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../VIEW/CSS/style.css">
-    <link rel="stylesheet" href="../VIEW/CSS/ionicons.min.css">
-    <link rel="stylesheet" href="../VIEW/CSS/index.css">
-    <link rel="stylesheet" href="../VIEW/CSS/owl.carousel.min.css">
-    <link rel="stylesheet" href="../VIEW/CSS/owl.theme.default.min.css">
-    <link rel="stylesheet" href="../VIEW/CSS/responsive.css">
+    <?php require_once('CSS.php')?>
     <title>Inscription</title>
 </head>
-<body style="background-image: url('../VIEW/IMAGES/bmw-4378348_1920.jpg');background-repeat: no-repeat;background-size: cover">
+<body style="background-image: url('../VIEW/IMAGES/bmw-4378348_1920.jpg');background-size: cover">
+<?php
+    if(isset($_SESSION['pseudo']) AND isset($_SESSION['type']) AND !empty($_SESSION['type']) AND !empty($_SESSION['pseudo'])){
+        require_once('headerConn.php');
+    }else{
+        require_once('header.php');
+    }
+?>  
+  
     
-    <div class="header">
-            <div class="menu-container">
-                    <div class="menu">
-                 
-                        <ul>
-                            
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="http://marioloncarek.com">About</a>
-                                
-                            </li>
-                            <li><a href="http://marioloncarek.com">Categorie</a>
-                                <ul>
-                                    <li><a href="http://marioloncarek.com">Bmw</a></li>
-                                    <li><a href="#">Jeep</a></li>
-                                    <li><a href="#">Toyota</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="http://marioloncarek.com">Contact</a>
-                               
-                            </li>
-                            <li><a href="http://marioloncarek.com"> <img src="../VIEW/ICONES/icons8_Male_User_20px.png" alt=""></a>
-                                <ul>
-                                    <li><a href="../VIEW/connecter.html">Connecter</a></li>
-                                    <li><a href="../VIEW/inscription.html">M'inscrire</a></li>
-                                    
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            
-            
-            </div>
 
                 <div class="container">
                   <div class="inc">
@@ -75,7 +46,7 @@
                                                 </div>
                                                 <div class="inp" >
                                                         <label for="telephone">Telephone</label><br>
-                                                        <input type="tel" name="Telephone" placeholder="votre portable"  required>
+                                                        <input type="number" name="Telephone" placeholder="12345678"  required>
                                                  </div>
                                     </div>
 
@@ -148,8 +119,7 @@
                             </div>
                   </div>
                 </div>
-            
-     <script src="../VIEW/JS/jquery-3.3.1.min.js"></script>
-     <script src="../VIEW/JS/megamenu.js"></script>
+            <?php require_once('footer.php')?>
+            <?php require_once('JS.php')?>
 </body>
 </html>

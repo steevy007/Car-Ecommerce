@@ -60,7 +60,10 @@
 
         //function permettant de connecter en tant que user
         public function Connecter(){
-           
+            include('ConnectionBD.php');
+            $stmt = $BDD->prepare("SELECT * from utilisateur where pseudo=? AND password=?");
+            $stmt->execute(array($this->pseudo,$this->password));
+            return $stmt;
         }
         //function permettant de deconnecter en tant que user
         public function Deconnecterr(){}

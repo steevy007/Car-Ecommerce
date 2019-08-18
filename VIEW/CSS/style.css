@@ -67,6 +67,8 @@ Screen style's
 .menu-mobile {
     display: none;
     padding: 20px;
+    font-size: 20px;
+    font-family: 'CaviarDreams';
 }
 
 .menu-mobile:after {
