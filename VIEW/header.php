@@ -11,16 +11,16 @@
                 <ul>
                     
                     <li><a href="../index.php">Home</a></li>
-                    <li><a href="">About</a>
+                    <li><a href="#">About</a>
                         
                     </li>
-                    <li><a href="">Voiture</a>
+                    <li><a href="voiture.php">Voiture</a>
                        
                     </li>
-                    <li><a href="">Contact</a>
+                    <li><a href="#">Contact</a>
                        
                     </li>
-                    <li class="h1"><a href=""> <img src="ICONES/icons8_Male_User_20px.png" alt=""></a>
+                    <li class="h1"><a href="#"> <img src="ICONES/icons8_Male_User_20px.png" alt=""></a>
                         <ul >
                             <li><a href="connecter.php">Connecter</a></li>
                             <li><a href="inscription.php">M'inscrire</a></li>

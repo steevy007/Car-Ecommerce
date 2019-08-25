@@ -15,6 +15,11 @@ $message="Mot de passe ou Pseudo Incorrect";
     <title>Connection</title>
 </head>
 <body style=" background-image:url('IMAGES/Sans titre-32.jpg');background-size:cover;">
+<?php
+    if(isset($_SESSION['pseudo']) AND isset($_SESSION['type']) AND !empty($_SESSION['type']) AND !empty($_SESSION['pseudo'])){
+        header('Location:../index.php');
+    }
+?>  
    <div class="con">
        <div class="log">
             

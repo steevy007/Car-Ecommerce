@@ -17,14 +17,13 @@ session_start();
 <body style="background-image: url('../VIEW/IMAGES/bmw-4378348_1920.jpg');background-size: cover">
 <?php
     if(isset($_SESSION['pseudo']) AND isset($_SESSION['type']) AND !empty($_SESSION['type']) AND !empty($_SESSION['pseudo'])){
-        require_once('headerConn.php');
-    }else{
-        require_once('header.php');
-    }
-?>  
-  
+        header('Location:../index.php');
+        
+        }else{
+            require_once('header.php');
+        }
     
-
+?>   
                 <div class="container">
                   <div class="inc">
                         <div class="inscr">

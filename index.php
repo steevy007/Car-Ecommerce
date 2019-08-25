@@ -52,27 +52,29 @@
                 <ul>
                     
                     <li><a href="#">Home</a></li>
-                    <li><a href="http://marioloncarek.com">About</a>
+                    <li><a href="#">About</a>
                         
                     </li>
-                    <li><a href="http://marioloncarek.com">Voiture</a>
+                    <li><a href="VIEW/voiture.php">Voiture</a>
                        
                     </li>
-                    <li><a href="http://marioloncarek.com">Contact</a>
+                    <li><a href="#">Contact</a>
                        
                     </li>
-                    <li class="h1"><a href="http://marioloncarek.com"> <img src="VIEW/ICONES/icons8_Male_User_20px.png" alt=""></a>
+                    <li class="h1"><a href="#"> <img src="VIEW/ICONES/icons8_Male_User_20px.png" alt=""></a>
                         <ul >
-                            <li><a href="">Profil</a></li>
-                            <li><a href="CONTROLLER/Deconnecter.php">Deconnexion</a></li>
+                            <li><a href="#">Profil</a></li>
+                            
                             <?php
                                 if($_SESSION['type']=='VENDEUR'){
                             ?>
-                            <li><a href="">Dashboard</a></li>
+                            <li><a href="VIEW/Dashboard.php">Dashboard</a></li>
                             <?php
                                   
                                 }
                                 ?>
+                                <li><a href="VIEW/Message.php">Message</a></li>
+                                <li><a href="CONTROLLER/Deconnecter.php">Deconnexion</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -97,16 +99,16 @@
                 <ul>
                     
                     <li><a href="#">Home</a></li>
-                    <li><a href="http://marioloncarek.com">About</a>
+                    <li><a href="#">About</a>
                         
                     </li>
-                    <li><a href="http://marioloncarek.com">Voiture</a>
+                    <li><a href="VIEW/voiture.php">Voiture</a>
                        
                     </li>
-                    <li><a href="http://marioloncarek.com">Contact</a>
+                    <li><a href="#">Contact</a>
                        
                     </li>
-                    <li class="h1"><a href="http://marioloncarek.com"> <img src="VIEW/ICONES/icons8_Male_User_20px.png" alt=""></a>
+                    <li class="h1"><a href="#"> <img src="VIEW/ICONES/icons8_Male_User_20px.png" alt=""></a>
                         <ul >
                             <li><a href="VIEW/connecter.php">Connecter</a></li>
                             <li><a href="VIEW/inscription.php">M'inscrire</a></li>

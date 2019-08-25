@@ -16,6 +16,7 @@ if(isset($_POST['btn'])){
         while($data=$reponse->fetch()){
             $_SESSION['pseudo']=$data['pseudo'];
             $_SESSION['type']=$data['typeInscrit'];
+            $_SESSION['ident']=$data['id'];
         }
         header('Location:../index.php');
     }else{
